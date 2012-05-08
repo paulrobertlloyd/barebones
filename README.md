@@ -10,18 +10,17 @@ Adding ?debug=true to the end of URL will show a 8px baseline grid. If you like 
 
 ## Licence
 
-This work is available under a Attribution-ShareAlike 2.0 UK: England & Wales Creative Commons licence:
-<http://creativecommons.org/licenses/by-sa/2.0/uk/>
+This work is available under the MIT license: <http://paulrobertlloyd.mit-license.org/>
 
 ## Referenced Works
 
 * Styleguide based on the Mezzoblue Markup Guide <http://www.mezzoblue.com/downloads/markupguide/>  
   by Dave Shea (<http://mezzoblue.com/>)  
-  Licence: <http://creativecommons.org/licenses/by-sa/2.0/ca/>
+  License: <http://creativecommons.org/licenses/by-sa/2.0/ca/>
 
 * Some of the included patterns inspired and adapted from those of Pears (<http://pea.rs/>)  
   by Dan Cederholm (<http://simplebits.com/>)  
-  Licence: <http://creativecommons.org/licenses/by-nc-sa/3.0/>
+  License: <http://creativecommons.org/licenses/by-nc-sa/3.0/>
 
 * Pattern Primer (<https://github.com/adactio/Pattern-Primer/>)  
   by Jeremy Keith (<http://adactio.com/>)
