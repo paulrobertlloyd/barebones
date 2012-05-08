@@ -1,14 +1,14 @@
 <!DOCTYPE html><html lang="en-gb"<?php if($_GET['debug']==true) echo ' class="debug"';?>>
 
 <head>
-    <title>Styleguide</title>
+    <title>Style Guide</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="_css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
 </head>
 
 <body>
-    <h1>Styleguide</h1>
+    <h1>Style Guide</h1>
     <p class="lede">A guide to the base markup styles used throughout the site.</p>
     <h2>Sections <a href="#">Linked</a></h2>
     <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
@@ -428,7 +428,7 @@
     <footer role="contentinfo">
         <nav role="navigation">
             <ul>
-                <li><a href="_styleguide.php">Styleguide</a></li>
+                <li><a href="_styleguide.php">Style Guide</a></li>
                 <li><a href="_patterns.php">Pattern Primer</a></li>
                 <li><a href="readme.md">Read Me</a></li>
             </ul>

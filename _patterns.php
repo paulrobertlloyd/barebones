@@ -65,7 +65,7 @@
     <footer role="contentinfo">
         <nav role="navigation">
             <ul>
-                <li><a href="_styleguide.php">Styleguide</a></li>
+                <li><a href="_styleguide.php">Style Guide</a></li>
                 <li><a href="_patterns.php">Pattern Primer</a></li>
                 <li><a href="readme.md">Read Me</a></li>
             </ul>

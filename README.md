@@ -1,6 +1,6 @@
 # Barebones
 
-Initial directory setup, styleguide and pattern primer. Intended as a starting point for my own projects, available for others to fork and adapt for theirs.
+Initial directory setup, style guide and pattern primer. Intended as a starting point for my own projects, available for others to fork and adapt for theirs.
 
 Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com/>).
 
@@ -14,7 +14,7 @@ This work is available under the MIT license: <http://paulrobertlloyd.mit-licens
 
 ## Referenced Works
 
-* Styleguide based on the Mezzoblue Markup Guide <http://www.mezzoblue.com/downloads/markupguide/>  
+* Style guide based on the Mezzoblue Markup Guide <http://www.mezzoblue.com/downloads/markupguide/>  
   by Dave Shea (<http://mezzoblue.com/>)  
   License: <http://creativecommons.org/licenses/by-sa/2.0/ca/>
 
