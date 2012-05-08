@@ -433,7 +433,7 @@
                 <li><a href="readme.md">Read Me</a></li>
             </ul>
         </nav>
-        <p><small>Copyright &#169; 2012 Paul Robert Lloyd. This work is <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons licensed</a>.</small></p>
+        <p><small>Copyright &#169; 2012 Paul Robert Lloyd. This work is <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/">Creative Commons licensed</a>.</small></p>
     </footer><!--/.contentinfo-->
 </body>
 </html>

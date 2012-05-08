@@ -2,7 +2,7 @@
 
 Initial directory setup, styleguide and pattern primer. Intended as a starting point for my own projects, available for others to clone and adapt for theirs.
 
-Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com>).
+Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com/>).
 
 ## Notes
 
@@ -10,18 +10,18 @@ Adding ?debug=true to the end of URL will show a 8px baseline grid. If you like 
 
 ## Licence
 
-This work is available under a Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales Creative Commons licence:
-<http://creativecommons.org/licenses/by-nc-sa/2.0/uk>
+This work is available under a Attribution-ShareAlike 2.0 UK: England & Wales Creative Commons licence:
+<http://creativecommons.org/licenses/by-sa/2.0/uk/>
 
 ## Referenced Works
 
-* Styleguide based on the Mezzoblue Markup Guide <http://www.mezzoblue.com/downloads/markupguide>  
-  by Dave Shea (<http://mezzoblue.com>)  
-  Licence: <http://creativecommons.org/licenses/by-sa/2.0/ca>
+* Styleguide based on the Mezzoblue Markup Guide <http://www.mezzoblue.com/downloads/markupguide/>  
+  by Dave Shea (<http://mezzoblue.com/>)  
+  Licence: <http://creativecommons.org/licenses/by-sa/2.0/ca/>
 
-* Some of the included patterns inspired and adapted from those of Pears (<http://pea.rs>)  
-  by Dan Cederholm (<http://simplebits.com>)  
-  Licence: <http://creativecommons.org/licenses/by-nc-sa/3.0>
+* Some of the included patterns inspired and adapted from those of Pears (<http://pea.rs/>)  
+  by Dan Cederholm (<http://simplebits.com/>)  
+  Licence: <http://creativecommons.org/licenses/by-nc-sa/3.0/>
 
-* Pattern Primer (<https://github.com/adactio/Pattern-Primer>)  
-  by Jeremy Keith (<http://adactio.com>)
+* Pattern Primer (<https://github.com/adactio/Pattern-Primer/>)  
+  by Jeremy Keith (<http://adactio.com/>)
