@@ -4,7 +4,7 @@ Initial directory setup, styleguide and pattern primer. Intended as a starting p
 
 ## Notes
 
-Adding ?debug=true to the end of URL will show a 16px baseline grid and a 12-column grid. If you like that sort of thing.
+Adding ?debug=true to the end of URL will show a 16px baseline grid and 12-column grid. If you like that sort of thing.
 
 ## Licence
 
