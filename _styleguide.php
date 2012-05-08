@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-gb"<?php if($_GET['debug']==true) echo ' class="debug"';?>>
+<!DOCTYPE html><html lang="en-gb"<?php if(isset($_GET['debug']) && $_GET['debug']==true) echo ' class="debug"';?>>
 
 <head>
     <title>Style Guide</title>
