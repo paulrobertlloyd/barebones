@@ -127,8 +127,9 @@ nav.breadcrumb {
 }
 nav.breadcrumb a {
     color:#999;
-    margin:0 0.2857em; /* 0 4px */
     text-decoration:none;
+    margin:0 0.2857em; /* 0 4px */
+    border:0 none;
     }
     nav.breadcrumb a:first-child {
         margin-left:0;
