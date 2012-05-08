@@ -18,7 +18,7 @@ This work is available under a Attribution-NonCommercial-ShareAlike 2.0 UK: Engl
   Licence: <http://creativecommons.org/licenses/by-sa/2.0/ca>
 
 * Some of the included patterns inspired and adapted from those of Pears (<http://pea.rs>)  
-  by Dan Cederholm (<http://simplebits.org>)  
+  by Dan Cederholm (<http://simplebits.com>)  
   Licence: <http://creativecommons.org/licenses/by-nc-sa/3.0>
 
 * Pattern Primer (<https://github.com/adactio/Pattern-Primer>)  
