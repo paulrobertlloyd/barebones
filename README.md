@@ -2,6 +2,8 @@
 
 Initial directory setup, styleguide and pattern primer. Intended as a starting point for my own projects, available for others to clone and adapt for theirs.
 
+Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com>).
+
 ## Notes
 
 Adding ?debug=true to the end of URL will show a 16px baseline grid and 12-column grid. If you like that sort of thing.
