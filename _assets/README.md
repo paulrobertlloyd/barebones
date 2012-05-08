@@ -1,0 +1,1 @@
+Use this folder for assets such as images and fonts.
