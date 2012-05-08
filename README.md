@@ -17,7 +17,7 @@ This work is available under a Attribution-NonCommercial-ShareAlike 2.0 UK: Engl
   by Dave Shea (<http://mezzoblue.com>)  
   Licence: <http://creativecommons.org/licenses/by-sa/2.0/ca>
 
-* Some of the include patterns inspired and adapted from those of Pears (<http://pea.rs>)  
+* Some of the included patterns inspired and adapted from those of Pears (<http://pea.rs>)  
   by Dan Cederholm (<http://simplebits.org>)  
   Licence: <http://creativecommons.org/licenses/by-nc-sa/3.0>
 
