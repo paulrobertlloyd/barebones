@@ -1,1 +1,1 @@
-Use this folder for JavaScript files. Libraries can be contained in the /lib/ sub-directory.
+Use this folder for JavaScript files. Libraries can be contained in a /lib/ sub-directory.
