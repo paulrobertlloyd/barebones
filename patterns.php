@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-gb">
+<!DOCTYPE html><html lang="en-gb"<?php if($_GET['debug']==true) echo ' class="debug"';?>>
 
 <head>
     <title>Pattern Primer</title>
@@ -9,11 +9,12 @@
         .pattern {
             margin:2em 0;
             border-top:1px dotted #d0d0d0;
-            padding:1.9375em 0 2em;
+            padding:2em 0 1.9375em;
             }
             .pattern:before, .pattern:after {
                 content:"";
                 display:table;
+                margin-bottom:-1px;
             }
             .pattern:after {
                 clear:both;
