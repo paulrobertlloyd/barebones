@@ -31,7 +31,14 @@ img, figure, figcaption, details, menu {
     Debuging
 ============================================================ */
 html.debug body {
-    background:url('assets/_baseline.png') repeat, url('assets/_grid.png') repeat-y 50% 0;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 87.5%,rgba(0,0,0,0.2) 100%);
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 87.5%, rgba(0,0,0,0.2) 100%);
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 87.5%,rgba(0,0,0,0.2) 100%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 87.5%, rgba(0,0,0,0.2) 100%);
+    background-image: linear-gradient(top, rgba(0,0,0,0.3) 87.5%,rgba(0,0,0,0.2) 100%);
+   -webkit-background-size: 100% 8px;
+   -o-background-size: 100% 8px;
+    background-size: 100% 8px;
 }
 html.debug * {
     background-color:rgba(255,0,0,0.1);
