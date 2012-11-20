@@ -14,9 +14,9 @@
 
     <h2>Contents</h2>
     <dl>
-        <dt><a href="_styleguide.php">Styleguide</a></dt>
+        <dt><a href="_styleguide.php">Style Guide</a></dt>
         <dd>A guide to the base markup styles used throughout the site.</dd>
-        <dt><a href="_styleguide.php">Pattern Library</a></dt>
+        <dt><a href="_patterns.php">Pattern Library</a></dt>
         <dd>A guide to all the common snippets of markup used throughout the site.</dd>
     </dl>
 </body>
