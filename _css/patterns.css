@@ -3,13 +3,16 @@
 ============================================================ */
 .lede {
     color:#666;
-    font:300 1.5em/1 sans-serif; /* 24px/24px */
-    letter-spacing:-0.04167em; /* -1px */
+    font-weight:300;
+    font-size:1.5em; /* 24px */
+    line-height:1; /* 24px */
     margin:0.6667em 0; /* 16px 0 */
 }
 .caption {
     color:#666;
-    font:400 0.875em/1.1429 sans-serif; /* 14px/16px */
+    font-weight:400;
+    font-size:0.875em; /* 14px */
+    line-height:1.1429; /* 16px */
     margin:0.5714em 0; /* 8px 0 */
 }
 
@@ -106,13 +109,17 @@ ul.stats li {
         border:none;
     }
 ul.stats li a {
-    font:600 1.125em/1.3334 sans-serif; /* 18px/24px */
+    font-weight:700;
+    font-size:1.125em; /* 18px */
+    line-height:1.3334; /* 24px */
     border:0 none;
     display:block;
     float:left;
 }
 ul.stats li a span {
-    font:400 0.6667em/1.3334 sans-serif; /* 12px/16px */
+    font-weight:400;
+    font-size:0.6667em; /* 12px */
+    line-height:1.3334; /* 16px */
     display:block;
 }
 
@@ -268,7 +275,9 @@ footer[role="contentinfo"] a {
     }
 .notification .h {
     color:#444;
-    font:600 1.125em/1.3334 sans-serif; /* 18px/24px */
+    font-weight:700;
+    font-size:1.125em; /* 18px */
+    line-height:1.3334; /* 24px */
     margin:0; /* 24px 0 0 */
     border:0 none;
     padding:0;
@@ -319,7 +328,9 @@ footer[role="contentinfo"] a {
 ============================================================ */
 ol.code {
     color:#999;
-    font:1em/1.5 Menlo,Monaco,'Courier New',Courier,monospace; /* 16px/24px */
+    font-family:Menlo,Monaco,'Courier New',Courier,monospace;
+    font-size:1em; /* 16px */
+    line-height:1.5; /* 24px */
     margin:1em 0 1em 3em; /* 16px 0 16px 48px */
     }
     ol.code li {
