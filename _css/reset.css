@@ -342,12 +342,11 @@ td, th {
 }
 th {
     color:#555;
-    font-size:1em; /* 16px */
     font-weight:700;
-    line-height:1; /* 16px */
-    border-bottom-color:#ccc;
     padding-bottom:0.4375em; /* 7px */
-    padding:0.25em 2em 0.6875em 0; /* 4px 32px 11px 0 */
+}
+thead th {
+    border-bottom-color:#ccc;
 }
 
 
