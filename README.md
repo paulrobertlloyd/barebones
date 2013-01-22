@@ -1,6 +1,6 @@
 # Barebones
 
-Initial directory setup, style guide and pattern primer. Intended as a starting point for my own projects, available for others to fork and adapt for theirs.
+An initial directory setup, style guide and pattern primer. Intended as a starting point for my own projects, available for others to fork and adapt for theirs.
 
 Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com/>).
 
