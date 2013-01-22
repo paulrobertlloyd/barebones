@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en-gb"<?php if(isset($_GET['debug'])) echo ' class="debug"';?>>
 
 <head>
-    <title>Pattern Primer</title>
+    <title>Pattern Primer - Barebones</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="_css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
@@ -67,7 +67,7 @@
             <ul>
                 <li><a href="_styleguide.php">Style Guide</a></li>
                 <li><a href="_patterns.php">Pattern Primer</a></li>
-                <li><a href="readme.md">Read Me</a></li>
+                <li><a href="README.md">Read Me</a></li>
             </ul>
         </nav>
         <p><small>Copyright &#169; 2012 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
