@@ -17,6 +17,8 @@
         <dt><a href="_patterns.php">Pattern Library</a></dt>
         <dd>A guide to all the common snippets of markup used throughout the site.</dd>
     </dl>
-    <p><small>Lovingly crafted by <a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a>. This work is available under the <a href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
+    <footer role="contentinfo">
+        <p><small>Copyright &#169; 2012 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
+    </footer><!--/.contentinfo-->
 </body>
 </html>
