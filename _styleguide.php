@@ -4,6 +4,7 @@
     <title>Style Guide - Barebones</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="_css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
 </head>
 
 <body>
