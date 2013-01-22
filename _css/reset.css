@@ -188,17 +188,13 @@ dd {
 figure {
     margin:0 0 2em 0; /* 0 0 32px 0 */
 }
-figcaption {
+figcaption p {
     color:#666;
     font-size:0.875em; /* 14px */
-    line-height:1.1429; /* 16px */
+    line-height:1.4286; /* 20px */
     margin:0.5714em 0; /* 8px 0 */
     clear:left;
-    }
-    figcaption * {
-        line-height:1.1429; /* 16px */
-        margin:0.5714em 0; /* 8px 0 */
-    }
+}
 
 
 /* ============================================================
