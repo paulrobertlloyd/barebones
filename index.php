@@ -1,15 +1,15 @@
 <!DOCTYPE html><html lang="en-gb"<?php if(isset($_GET['debug'])) echo ' class="debug"';?>>
 
 <head>
-    <title>Style Guide</title>
+    <title>Barebones - An initial directory setup, style guide and pattern primer</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="_css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
 </head>
 
 <body>
     <h1>Barebones</h1>
     <p>Initial directory setup, style guide and pattern primer. Intended as a starting point for my own projects, available for others to fork and adapt for theirs.</p>
+    <p>Use Barebones to start your own project! <a href="https://github.com/paulrobertlloyd/barebones/archive/master.zip" download="barebones">Download the files</a> or <a href="https://github.com/paulrobertlloyd/barebones">view the project</a> on Github</a>.<p>
     <p>Lovingly crafted by <a href="http://paulrobertlloyd.com/">Paul Robert Lloyd</a>.</p>
 
     <h2>Contents</h2>
