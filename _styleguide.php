@@ -4,7 +4,6 @@
     <title>Style Guide</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="_css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
 </head>
 
 <body>
@@ -38,12 +37,12 @@
     <h3>Pre-formatted text</h3>
     <p>The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art. Here&#8217;s an example showing the printable characters of <abbr>ASCII</abbr>:</p>
     <div class="example">
-<pre><samp>  ! " # $ % &amp; ' ( ) * + , - . /
+<pre><samp>! " # $ % &amp; ' ( ) * + , - . /
     0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
     @ A B C D E F G H I J K L M N O
     P Q R S T U V W X Y Z [ \ ] ^ _
     ` a b c d e f g h i j k l m n o
-    p q r s t u v w x y z { | } ~ </samp></pre>
+    p q r s t u v w x y z { | } ~</samp></pre>
     </div>
 
     <h3>Blockquotes</h3>
