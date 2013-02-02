@@ -1,33 +1,4 @@
 /* ============================================================
-    Reset
-    1em = 16px
-============================================================ */
-html, body, section, nav, article, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address,
-p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, div,
-a, em, strong, small, s, cite, q, dfn, abbr, time, code, var, samp, kbd, sub, sup, i, b, mark, span, br,
-ins, del,
-img, iframe, embed, object, video audio, canvas, map, area,
-table, caption, colgroup, tbody, thead, tfoot, tr, td, th,
-form, fieldset, legend, label, input, button, select, textarea,
-details, summary, command, menu {
-    font-size:100%;
-    font-style:normal;
-    text-align:left;
-    text-decoration:none;
-    vertical-align:baseline;
-    background:transparent;
-    margin:0;
-    outline:0;
-    border:0 none;
-    padding:0;
-}
-section, nav, article, aside, hgroup, header, footer,
-img, figure, figcaption, details, menu {
-    display:block;
-}
-
-
-/* ============================================================
     Debuging
 ============================================================ */
 html.debug body {
@@ -42,6 +13,15 @@ html.debug body {
 }
 html.debug * {
     background-color:rgba(255,0,0,0.1);
+}
+
+
+/* ============================================================
+    HTML5 Elements
+============================================================ */
+section, nav, article, aside, hgroup, header, footer,
+img, figure, figcaption, details, menu {
+    display:block;
 }
 
 
@@ -116,7 +96,7 @@ h6 {
 /* ============================================================
     Grouping
 ============================================================ */
-p,pre,blockquote,ul,ol,dl,figure,figcaption,table,fieldset {
+p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
     font-size:1em; /* 16px */
     line-height:1.5; /* 24px */
     margin:0.5em 0; /* 8px 0 */
@@ -161,14 +141,13 @@ blockquote {
     }
 
 /* Grouping > Lists */
-li {
-    margin-left:1.5em; /* 24px */
-}
 ol {
     list-style-type:decimal;
+    padding:0;
 }
 ul {
     list-style-type:square;
+    padding:0;
     }
     ul li li {
         list-style-type:circle;
@@ -177,12 +156,12 @@ dt {
     font-size:1em; /* 16px */
     line-height:1.5; /* 24px */
 }
-dd {
+dd, li li {
     margin-left:1.5em; /* 24px */
-    > * {
+    }
+    dd > *, li li > * {
         margin-top:0;
     }
-}
 
 /* Grouping > Figures */
 figure {
@@ -202,6 +181,7 @@ figcaption p {
 ============================================================ */
 a {
     color:#06f;
+    text-decoration:none;
     border-bottom:1px solid rgba(0,102,255,0.25);
     }
     a:focus {
@@ -351,6 +331,8 @@ thead th {
 ============================================================ */
 fieldset {
     margin-top:2em;
+    border:0 none;
+    padding:0;
 }
 fieldset legend {
     margin-top:0;
@@ -417,11 +399,13 @@ select,
 textarea,
 button {
     background-color:#f0f0f0;
+    line-height:1.5; /* 24px */
    -webkit-border-radius:0px;
    -webkit-box-shadow:inset 0 1px 0 #e0e0e0;
    -moz-box-shadow:inset 0 1px 0 #e0e0e0;
     box-shadow:inset 0 1px 0 #e0e0e0;
     box-sizing:border-box;
+    border:0 none;
     border-radius:0.25em;
     padding:0.25em; /* 4px */
     vertical-align:middle;
@@ -451,6 +435,7 @@ button {
    -webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.1);
    -moz-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.1);
     box-shadow:inset 0 -1px 0 rgba(0,0,0,0.1);
+    border:0 none;
     border-radius:0.25em;
     margin-right:1em; /* 16px */
     padding:0.25em 2%; /* 4px 2% */
