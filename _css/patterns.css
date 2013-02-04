@@ -345,23 +345,23 @@ ul.stats span {
 /* ============================================================
     Navigation
 ============================================================ */
-[class*="nav"] li {
+[class$="nav"] li {
     margin: 0 0.75em 0 -1em; /* 0 -12px 0 -16px */
     display: inline;
 }
-[class*="nav"] a {
+[class$="nav"] a {
     border: 0;
     border-right: 1px solid #e9e9e9;
     padding: 0.5em 1em; /* 8px 16px */
     display: inline-block;
 }
-[class*="nav"] li:last-child a {
+[class$="nav"] li:last-child a {
     border-right: 0;
     }
-    [class*="nav"] li a:hover {
+    [class$="nav"] li a:hover {
         background-color: #f9f9f9;
     }
-    [class*="nav"] li a.is-active {
+    [class$="nav"] li a.is-active {
         color: #444;
         font-weight: 700;
         background-color: #e9e9e9;
