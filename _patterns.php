@@ -76,7 +76,7 @@
             $files[] = $file;
         endif;
     endwhile;
-    asort($files, SORT_NATURAL);
+    array_multisort($files, SORT_NATURAL);
     foreach ($files as $file):
         echo '<section class="pattern">';
         include($patterns_dir.'/'.$file);
