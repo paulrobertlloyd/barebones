@@ -231,15 +231,15 @@ dl.metadata dd {
     .progress li.completed:hover:after {
         border-color:transparent #e9e9e9;
     }
-.progress li.active {
+.progress li.is-active {
     color:#fff;
     font-weight:700;
     background-color:#34d;
     }
-    .progress li.active:before {
+    .progress li.is-active:before {
         border-color:#34d transparent;
     }
-    .progress li.active:after {
+    .progress li.is-active:after {
         border-color:transparent #34d;
     }
 .progress li a {
@@ -345,13 +345,8 @@ ul.stats span {
 /* ============================================================
     Navigation
 ============================================================ */
-[class*="nav"] {
-    margin-top:2em; /* 32px */
-    border-top:1px solid #e9e9e9;
-    padding:0.5em 0; /* 8px 0 */
-}
 [class*="nav"] li {
-    margin:0 -0.25em 0 0; /* 0 -4px 0 0 */
+    margin:0 0.75em 0 -1em; /* 0 -12px 0 -16px */
     display:inline;
 }
 [class*="nav"] a {
@@ -366,7 +361,7 @@ ul.stats span {
     [class*="nav"] li a:hover {
         background-color:#f9f9f9;
     }
-    [class*="nav"] li a.active {
+    [class*="nav"] li a.is-active {
         color:#444;
         font-weight:700;
         background-color:#e9e9e9;
@@ -374,9 +369,6 @@ ul.stats span {
 
 /* Vertical */
 .vertical-nav {
-    margin-top:0;
-    margin-bottom:2em; /* 32px */
-    border-top:0;
     border-right:1px solid #e9e9e9;
     width:25%;
 }
@@ -389,11 +381,11 @@ ul.stats span {
     border-bottom:1px solid #e9e9e9;
     display:block;
     }
-    .vertical-nav a.active {
+    .vertical-nav a.is-active {
         border-radius:0.25em 0 0 0.25em;
         position:relative;
     }
-    .vertical-nav a.active:after {
+    .vertical-nav a.is-active:after {
         content:"";
         font-size:1em; /* 16px */
         border:solid;
@@ -410,11 +402,12 @@ ul.stats span {
     border-top:0;
     border-bottom:1px solid #e9e9e9;
     padding:0;
+    margin-left:1em;
 }
 .tabbed-nav a {
     border-radius:0.25em 0.25em 0 0; /* 4px 4px 0 0 */
     }
-    .tabbed-nav a.active {
+    .tabbed-nav a.is-active {
         background-color:#fff;
         margin-bottom:-1px;
         border:1px solid #e9e9e9;
@@ -422,7 +415,7 @@ ul.stats span {
     }
 
 /* Pagination */
-.page-nav a.active {
+.page-nav a.is-active {
     border-radius:0.25em; /* 4px */
 }
 .page-nav a[rel="prev"],
