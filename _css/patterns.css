@@ -87,34 +87,34 @@ a[rel="tag"] {
     List
 ============================================================ */
 /* Articles */
-ol.articles {
+.articles {
     overflow: hidden;
 }
-ol.articles a {
+.articles a {
     float: left;
     }
-    ol.articles a:hover {
+    .articles a:hover {
         background-color: rgba(17,34,187,0.05);
     }
-    ol.articles a:active {
+    .articles a:active {
         background-color: rgba(187,17,34,0.05);
     }
-ol.articles li {
+.articles li {
     list-style: none;
     margin-left: 0;
     }
-ol.articles p {
+.articles p {
     color: #444;
 }
-ol.articles .caption {
+.articles .caption {
     color: #888;
     margin-top: 0.25em;
 }
-ol.articles img.pull-left {
+.articles img.pull-left {
     margin-bottom: 0;
     width: 25%;
 }
-ol.articles img + article {
+.articles img + article {
     width: 70%;
     float: left;
 }
@@ -248,10 +248,10 @@ dl.metadata dd {
 }
 
 /* Stats */
-ul.stats {
+.stats {
     overflow: hidden;
 }
-ul.stats li {
+.stats li {
     list-style: none;
     margin: 0 0.75em 0 0; /* 0 12px 0 0 */
     padding: 0 0.75em 0 0; /* 0 12px 0 0 */
@@ -263,7 +263,7 @@ ul.stats li {
         padding: 0;
         border: none;
     }
-ul.stats a {
+.stats a {
     font-weight: 700;
     font-size: 1.125em; /* 18px */
     line-height: 1.3334; /* 24px */
@@ -271,7 +271,7 @@ ul.stats a {
     display: block;
     float: left;
 }
-ul.stats span {
+.stats span {
     font-weight: 400;
     font-size: 0.6667em; /* 12px */
     line-height: 1.3334; /* 16px */
