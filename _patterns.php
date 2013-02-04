@@ -76,7 +76,7 @@
             $files[] = $file;
         endif;
     endwhile;
-    rsort($files);
+    rsort($files, SORT_NATURAL);
     foreach ($files as $file):
         echo '<section class="pattern">';
         include($patterns_dir.'/'.$file);
@@ -84,7 +84,7 @@
         echo '<summary title="Show markup and usage">&#8226;&#8226;&#8226;</summary>';
         echo '<section>';
         echo '<textarea rows="10" cols="30" class="input">'.htmlspecialchars(file_get_contents($patterns_dir.'/'.$file)).'</textarea>';
-        echo '<p class="caption"><strong>Usage:</strong> '.htmlspecialchars(file_get_contents($patterns_dir.'/'.str_replace('.html','.txt',$file))).'</p>';
+        echo '<p class="caption"><strong>Usage:</strong> '.htmlspecialchars(@file_get_contents($patterns_dir.'/'.str_replace('.html','.txt',$file))).'</p>';
         echo '</section>';
         echo '</details><!--/.primer-->';
         echo '</section><!--/.pattern-->';
