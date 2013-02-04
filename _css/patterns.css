@@ -1,4 +1,15 @@
 /* ============================================================
+    Highlight/Marks
+============================================================ */
+.highlight {
+    background-color:#f9f9f9;
+}
+.mark {
+    background-color:#fff9d9;
+}
+
+
+/* ============================================================
     Text
 ============================================================ */
 .lede {
@@ -288,6 +299,9 @@ ul.stats span {
 [class*="module"] {
     padding:1.5%;
 }
+[class*="module"] > *:last-child {
+    margin-bottom:0;
+}
 [class*="module"] .h {
     color:inherit;
     font-weight:700;
@@ -296,16 +310,10 @@ ul.stats span {
     margin:0 0 0.4444em; /* 0 0 8px */
 }
 
-/* Primary module */
-.primary-module {
-    background-color:#f9f9f9;
-    border-radius:0.25em; /* 4px*/
-}
-
 /* Notification module */
 [class$="notice"] {
-    background-color:#fffbe6;
-    border-left:0.25em solid #fe9; /* 4px */
+    background-color:#fff9d9;
+    border-left:0.25em solid #ed8; /* 4px */
     border-radius:0 0.25em 0.25em 0; /* 0 4px 4px 0 */
 }
 .success-notice {
