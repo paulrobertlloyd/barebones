@@ -3,6 +3,7 @@
 <head>
     <title>Barebones - An initial directory setup, style guide and pattern primer</title>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="_css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
 </head>
