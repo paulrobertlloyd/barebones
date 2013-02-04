@@ -168,6 +168,7 @@ a[rel="tag"] {
     margin-top: 0.6667em; /* 8px */
 }
 .articles article img {
+    margin-bottom: 0;
     width: 25%;
 }
 
