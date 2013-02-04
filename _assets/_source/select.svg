@@ -1,0 +1,7 @@
+<svg width="16" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<path d="M8,0 L13,6 L3,6 L8,0" id="t" fill="#444"></path>
+	</defs>
+	<use xlink:href="#t"/>
+	<use xlink:href="#t" transform="translate(16, 15) rotate(-180)"/>
+</svg>

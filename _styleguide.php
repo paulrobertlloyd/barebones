@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-gb"<?php if(isset($_GET['debug'])) echo ' class="debug"';?>>
+<!DOCTYPE html><html lang="en-gb">
 
 <head>
     <title>Style Guide - Barebones</title>
@@ -8,8 +8,14 @@
 </head>
 
 <body>
-    <h1>Style Guide</h1>
-    <p class="lede">A guide to the base markup styles used throughout the site.</p>
+    <header>
+        <nav role="navigation" class="breadcrumb-nav">
+            <a href="/">Barebones</a> /
+        </nav><!--/.breadcrumb-nav-->
+        <h1>Style Guide</h1>
+        <p class="lede">Base markup styles used throughout this site.</p>
+    </header>
+
     <h2>Sections <a href="#">Linked</a></h2>
     <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
     <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
@@ -38,12 +44,12 @@
     <h3>Pre-formatted text</h3>
     <p>The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art. Here&#8217;s an example showing the printable characters of <abbr>ASCII</abbr>:</p>
     <div class="example">
-<pre><samp>! " # $ % &amp; ' ( ) * + , - . /
-    0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-    @ A B C D E F G H I J K L M N O
-    P Q R S T U V W X Y Z [ \ ] ^ _
-    ` a b c d e f g h i j k l m n o
-    p q r s t u v w x y z { | } ~</samp></pre>
+<pre><samp>&#32; ! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~</samp></pre>
     </div>
 
     <h3>Blockquotes</h3>
@@ -52,9 +58,7 @@
         <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
             <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
         </blockquote>
-        <p>Winston Churchill, in <cite><a href="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">a speech to the House of Commons</a></cite>. 11th November 1947</p>
     </div>
-    <p>Additionally, you might wish to cite the source, as in the above example. The correct method involves including the <code>cite</code> attribute on the <code>blockquote</code> element, but since no browser makes any use of that information, it&#8217;s useful to link to the source also.</p>
 
     <h3>Ordered list</h3>
     <p>The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3&#8230; a,b,c&#8230; i,ii,iii&#8230; and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item).</p>
@@ -129,9 +133,9 @@
     <p>Figures are usually used to refer to images:</p>
     <div class="example">
         <figure>
-            <img src="http://lorempixum.com/680/400/abstract/?r" alt="Example image"/>
+            <img src="http://lorempixum.com/680/400/abstract" alt="Example image"/>
             <figcaption>
-                <p>This is a placeholder image, with supporting caption.</p>
+                This is a placeholder image, with supporting caption.
             </figcaption>
         </figure>
     </div>
@@ -143,9 +147,18 @@
             All mimsy were the borogoves,<br/>
             And the mome raths outgrabe.</p>
             <figcaption>
-                <p><cite>Jabberwocky</cite> (first verse). Lewis Carroll, 1832-98</p>
+                <cite>Jabberwocky</cite> (first verse). Lewis Carroll, 1832-98
             </figcaption>
         </figure>
+    </div>
+    <p>When you  wish to cite the source of a quote, you should do so using a figure also:</p>
+    <div class="example">
+        <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
+            <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+        </blockquote>
+        <figcaption>
+            Winston Churchill, in <cite><a href="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">a speech to the House of Commons</a></cite>. 11th November 1947
+        </figcaption>
     </div>
 
     <h2 id="text">Text-level Semantics</h2>
@@ -355,84 +368,7 @@
         </table>
     </div>
 
-    <h2 id="forms">Forms</h2>
-    <p>Forms can be used when you wish to collect data from users. The <code>fieldset</code> element enables you to group related fields within a form, and each one should contain a corresponding <code>legend</code>. The <code>label</code> element ensures field descriptions are associated with their corresponding form widgets.</p>
-    <div class="example">
-        <form action="#">
-            <fieldset>
-                <legend>Legend</legend>
-                <div>
-                    <label for="text">Text Input <abbr title="Required">*</abbr></label>
-                    <input id="text" class="text" type="text"/>
-                    <em>Note about this field</em>
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input id="password" class="text" type="password"/>
-                    <em>Note about this field</em>
-                </div>
-                <div>
-                    <label for="password">Web Address</label>
-                    <input id="password" class="text" type="url"/>
-                    <em>Note about this field</em>
-                </div>
-                <div>
-                    <label for="password">Email Address</label>
-                    <input id="password" class="text" type="email"/>
-                    <em>Note about this field</em>
-                </div>
-                <div>
-                    <label for="textarea">Textarea</label>
-                    <textarea id="textarea" class="text" rows="8" cols="48"></textarea>
-                    <em class="clear">Note about this field</em>
-                </div>
-                <div>
-                    <label for="checkbox">Single Checkbox</label>
-                    <label for="checkbox" class="check"><input id="checkbox" type="checkbox" class="checkbox"/> Label</label>
-                </div>
-                <div>
-                    <label for="select">Select</label>
-                    <select id="select">
-                        <optgroup label="Option Group">
-                            <option>Option One</option>
-                            <option>Option Two</option>
-                            <option>Option Three</option>
-                        </optgroup>
-                    </select>
-                    <em>Note about this selection</em>
-                </div>
-                <fieldset class="options">
-                    <legend>Checkbox <abbr title="Required">*</abbr></legend>
-                    <ul>
-                        <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked" /> Choice A</label></li>
-                        <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" /> Choice B</label></li>
-                        <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" /> Choice C</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset class="options">
-                    <legend>Radio</legend>
-                    <ul>
-                        <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked" /> Option 1</label></li>
-                        <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio" /> Option 2</label></li>
-                    </ul>
-                </fieldset>
-                <div class="submit">
-                    <input type="submit" value="Post Comment" />
-                    <input type="button" value="Preview" />
-                    <a href="#">Cancel</a>
-                </div>
-            </fieldset>
-        </form>
-    </div>
-
     <footer role="contentinfo">
-        <nav role="navigation">
-            <ul>
-                <li><a href="_styleguide.php">Style Guide</a></li>
-                <li><a href="_patterns.php">Pattern Primer</a></li>
-                <li><a href="README.md">Read Me</a></li>
-            </ul>
-        </nav>
         <p><small>Copyright &#169; 2012 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
     </footer><!--/.contentinfo-->
 </body>

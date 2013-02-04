@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-gb"<?php if(isset($_GET['debug'])) echo ' class="debug"';?>>
+<!DOCTYPE html><html lang="en-gb">
 
 <head>
     <title>Pattern Primer - Barebones</title>
@@ -7,36 +7,65 @@
     <link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
     <style>
         .pattern {
-            margin:2em 0;
-            border-top:1px dotted #d0d0d0;
-            padding:2em 0 1.9375em;
-            }
-            .pattern:before, .pattern:after {
-                content:"";
-                display:table;
-                margin-bottom:-1px;
-            }
-            .pattern:after {
-                clear:both;
-            }
-        .pattern .display {
-            width:55%;
-            float:left;
+            margin-top:4em;
         }
-        .pattern .source {
-            width:35%;
-            float:right;
+        details.primer {
+            margin-top:2.5em;
+            background-color:#e9e9e9;
+            border-bottom:4px solid #e9e9e9;
+            position:relative;
         }
-        .pattern .source textarea {
-            font:0.75em/1.5 Menlo,Monaco,'Courier New',Courier,monospace; /* 16px/24px */
-            width:100%;
+        details.primer summary {
+            font-size:1.5em;
+            line-height:1;
+            text-shadow:0 1px 0 #fff;
+            background-color:#e9e9e9;
+            border-radius:0.25em 0 0 0;
+            padding:0.25em;
+            overflow:hidden;
+            position:absolute;
+            right:0;
+            top:-1.5em;
+            }
+            details.primer summary::-webkit-details-marker {
+                display:none;
+            }
+        details.primer section {
+            padding:1.5%;
+            overflow:hidden;
+        }
+        details.primer textarea {
+            font:0.75em/1.5 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace; /* 16px/24px */
+        }
+        details.primer textarea {
+            padding:1%;
+            width:98%;
+        }
+        details.primer p.caption {
+            margin-left:0;
+            margin-bottom:0;
+        }
+        @media screen and (min-width:40em) {
+            details.primer textarea {
+                width:58%;
+                float:left;
+            }
+            details.primer p.caption {
+                width:38%;
+                float:right;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Pattern Primer</h1>
-    <p class="lede">A guide to all the common snippets of markup used throughout the site.</p>
+    <header>
+        <nav role="navigation" class="breadcrumb-nav">
+            <a href="/">Barebones</a> /
+        </nav><!--/.breadcrumb-nav-->
+        <h1>Pattern Primer</h1>
+        <p class="lede">Common snippets of markup used throughout this site.</p>
+    </header>
 
 <?php
     $files = array();
@@ -47,29 +76,22 @@
             $files[] = $file;
         endif;
     endwhile;
-    sort($files);
+    rsort($files);
     foreach ($files as $file):
-        echo '<div class="pattern">';
-        echo '<div class="display">';
+        echo '<section class="pattern">';
         include($patterns_dir.'/'.$file);
-        echo '</div>';
-        echo '<div class="source">';
-        echo '<textarea rows="10" cols="30">';
-        echo htmlspecialchars(file_get_contents($patterns_dir.'/'.$file));
-        echo '</textarea>';
-        echo '<p><a href="'.$patterns_dir.'/'.$file.'">'.$file.'</a></p>';
-        echo '</div>';
-        echo '</div>';
+        echo '<details class="primer">';
+        echo '<summary title="Show markup and usage">&#8226;&#8226;&#8226;</summary>';
+        echo '<section>';
+        echo '<textarea rows="10" cols="30" class="input">'.htmlspecialchars(file_get_contents($patterns_dir.'/'.$file)).'</textarea>';
+        echo '<p class="caption"><strong>Usage:</strong> '.htmlspecialchars(file_get_contents($patterns_dir.'/'.str_replace('.html','.txt',$file))).'</p>';
+        echo '</section>';
+        echo '</details><!--/.primer-->';
+        echo '</section><!--/.pattern-->';
     endforeach;
 ?>
+
     <footer role="contentinfo">
-        <nav role="navigation">
-            <ul>
-                <li><a href="_styleguide.php">Style Guide</a></li>
-                <li><a href="_patterns.php">Pattern Primer</a></li>
-                <li><a href="README.md">Read Me</a></li>
-            </ul>
-        </nav>
         <p><small>Copyright &#169; 2012 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
     </footer><!--/.contentinfo-->
 </body>
