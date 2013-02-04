@@ -110,7 +110,7 @@ a[rel="tag"] {
     color: #888;
     margin-top: 0.25em;
 }
-.articles img.pull-left {
+.articles img {
     margin-bottom: 0;
     width: 25%;
 }
