@@ -590,7 +590,7 @@ select.input,
 	background: -o-linear-gradient(top, #56f, #34d);
 	background: linear-gradient(to bottom, #56f, #34d);
 	border: 1px solid #34d;
-	border-color: rgba(0,0,0,0.4);
+	border-color: rgba(0,0,0,0.2);
 	}
 	.primary-button:hover,
 	.primary-button:focus {
