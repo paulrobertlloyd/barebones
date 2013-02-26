@@ -4,8 +4,7 @@
 	<title>Pattern Primer - Barebones</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="_css/reset.css" type="text/css"/>
-	<link rel="stylesheet" href="_css/patterns.css" type="text/css"/>
+	<link rel="stylesheet" href="_css/styles.css" type="text/css"/>
 	<style>
 		.pattern {
 			margin-top:4em;
@@ -60,13 +59,15 @@
 </head>
 
 <body>
-	<header>
-		<nav role="navigation" class="breadcrumb-nav">
-			<a href="/">Barebones</a> /
-		</nav><!--/.breadcrumb-nav-->
-		<h1>Pattern Primer</h1>
-		<p class="lede">Common snippets of markup used throughout this site.</p>
-	</header>
+	<main role="main">
+		<div class="container">
+			<header>
+				<nav role="navigation" class="breadcrumb-nav">
+					<a href="../">Barebones</a> /
+				</nav><!--/.breadcrumb-nav-->
+				<h1>Pattern Primer</h1>
+				<p class="lede">Common snippets of markup used throughout this site.</p>
+			</header>
 
 <?php
 	$files = array();
@@ -92,8 +93,13 @@
 	endforeach;
 ?>
 
+		</div><!--/container-->
+	</main><!--@main-->
+
 	<footer role="contentinfo">
-		<p><small>Copyright &#169; 2012 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
-	</footer><!--/.contentinfo-->
+		<div class="container">
+			<p><small>Copyright &#169; 2013 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
+		</div><!--/container-->
+	</footer><!--/@contentinfo-->
 </body>
 </html>
