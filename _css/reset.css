@@ -8,6 +8,7 @@
 	width: device-width;
 }
 
+
 /* ============================================================
 	HTML5 Elements
 ============================================================ */
@@ -17,6 +18,16 @@ img, figure, figcaption, details, menu {
 }
 audio, video, canvas {
 	display: inline-block;
+}
+
+
+/* ============================================================
+	Box sizing
+============================================================ */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
@@ -32,12 +43,6 @@ body {
 	background-color: #fff;
 	text-rendering: optimizeLegibility;
 	margin: 0 auto;
-	width: 90%;
-}
-@media screen and (min-width: 40em) {
-	body {
-		width: 80%;
-	}
 }
 h1 {
 	color: #222;
@@ -96,7 +101,7 @@ header {
 	padding-top: 2em;
 }
 footer {
-	margin-top: 2em;
+	margin-top: 1em;
 	border-top: 1px solid #e9e9e9;
 	padding-top: 0.5em;
 }
@@ -366,14 +371,15 @@ textarea {
 	outline: 0;
 }
 select {
-   -webkit-appearance: button;
+	-webkit-appearance: button;
 	appearance: normal;
 }
 button,
 input[type="button"],
 input[type="submit"] {
-   -webkit-appearance: button;
+	-webkit-appearance: button;
 	line-height: normal;
+	border-radius: 0;
 	width: auto;
 	cursor: pointer;
 	}
@@ -387,18 +393,16 @@ input[type="checkbox"] {
 	margin-right: 0.25em;
 }
 input[type="search"] {
-   -webkit-appearance: textfield;
-   -webkit-box-sizing: content-box;
-   -moz-box-sizing: content-box;
-	box-sizing: content-box;
+	-webkit-appearance: none;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-   -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 [disabled] {
 	cursor:  default;
 }
+
 
 /* Placeolder */
 ::-webkit-input-placeholder {
