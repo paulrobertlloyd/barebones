@@ -4,6 +4,7 @@
 	<title>Pattern Primer - Barebones</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 	<link rel="stylesheet" href="_css/styles.css" type="text/css"/>
 	<style>
 		.pattern {
@@ -66,7 +67,7 @@
 					<a href="../">Barebones</a> /
 				</nav><!--/.breadcrumb-nav-->
 				<h1>Pattern Primer</h1>
-				<p class="lede">Common snippets of markup used throughout this site.</p>
+				<p class="lede">Common snippets of markup</p>
 			</header>
 
 <?php

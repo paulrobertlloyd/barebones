@@ -8,10 +8,26 @@
 ============================================================ */
 body {
 	background-color: #f6f6f6;
-} 
+}
+header[role="banner"] {
+	color: #fff;
+	background-image: -webkit-linear-gradient(top, #52d, #25d);
+	background-image: -moz-linear-gradient(top, #52d, #25d);
+	background-image: -ms-linear-gradient(top, #52d, #25d);
+	background-image: -o-linear-gradient(top, #52d, #25d);
+	background-image: linear-gradient(to bottom, #52d, #25d);
+	box-shadow: inset 0 -2px rgba(0,0,0,0.25), inset 0 2px rgba(0,0,0,0.1);
+	margin: 0;
+	padding-top: 4em; /* 64px */
+	}
+	header[role="banner"] .headline,
+	header[role="banner"] .lede {
+		color: #fff;
+		text-shadow: 0 -2px 0 rgba(0,0,0,0.25);
+	}
 main[role="main"] {
 	background-color: #fff;
-	padding: 0 0 2em 0;
+	padding: 1em 0;
 }
 footer[role="contentinfo"] {
 	box-shadow: inset 0 2px #f0f0f0;

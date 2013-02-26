@@ -4,26 +4,30 @@
 	<title>Barebones - An initial directory setup, style guide and pattern primer</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 	<link rel="stylesheet" href="_css/styles.css" type="text/css"/>
 </head>
 
 <body>
+	<header role="banner">
+		<div class="container">
+			<h1 class="headline">Barebones</h1>
+			<p class="lede">An initial directory setup, style guide and pattern&#160;primer</p>
+		</div><!--/container-->
+	</header><!--/@banner-->
+
 	<main role="main">
 		<div class="container">
-			<header>
-				<h1>Barebones</h1>
-			</header>
-
-			<p>An initial directory setup, style guide and pattern primer. Intended as a starting point for my own projects, available for others to fork and adapt for theirs.</p>
-			<p>Use Barebones to start your own project! <a href="https://github.com/paulrobertlloyd/barebones/archive/master.zip" download="barebones">Download the files</a> or <a href="https://github.com/paulrobertlloyd/barebones">view the project</a> on Github</a>.<p>
+			<p>Intended as a starting point for my own projects, Barebones is freely available to fork and adapt for your own&#160;needs.</p>
+			<p><a class="button" href="https://github.com/paulrobertlloyd/barebones/archive/master.zip" download="barebones">Download Barebones</a> or&#160;<a href="https://github.com/paulrobertlloyd/barebones">view&#160;project&#160;on&#160;Github</a>.<p>
 			<h2>Contents</h2>
 			<dl>
 				<dt><a href="_styleguide.php">Style Guide</a></dt>
-				<dd>Base markup styles used throughout this site.</dd>
+				<dd>Basic markup and typographic styles</dd>
 				<dt><a href="_patterns.php">Pattern Library</a></dt>
-				<dd>Common snippets of markup used throughout this site.</dd>
+				<dd>Common snippets of markup</dd>
 				<dt><a href="_forms.php">Form Example</a></dt>
-				<dd>Forms are used when you wish to collect data from users.</dd>
+				<dd>Basic form styles</dd>
 			</dl>
 		</div><!--/container-->
 	</main><!--@main-->

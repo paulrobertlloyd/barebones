@@ -4,6 +4,7 @@
 	<title>Style Guide - Barebones</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 	<link rel="stylesheet" href="_css/styles.css" type="text/css"/>
 </head>
 
@@ -15,7 +16,7 @@
 					<a href="../">Barebones</a> /
 				</nav><!--/.breadcrumb-nav-->
 				<h1>Style Guide</h1>
-				<p class="lede">Base markup styles used throughout this site.</p>
+				<p class="lede">Basic markup and typographic styles</p>
 			</header>
 
 			<h2>Sections <a href="#">Linked</a></h2>

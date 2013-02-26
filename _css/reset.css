@@ -62,7 +62,7 @@ h2 {
    -webkit-font-smoothing: antialiased;
 }
 h3 {
-	color: #444;
+	color: #333;
 	font-weight: 400;
 	font-size: 1.3125em; /* 21px */
 	line-height: 1.1429; /* 24px */
@@ -199,23 +199,23 @@ blockquote + figcaption: before {
 	Text-level semantics
 ============================================================ */
 a {
-	color: #34d;
+	color: #25d;
 	text-decoration: none;
-	border-bottom: 1px solid rgba(51,68,221,0.1);
+	border-bottom: 1px solid rgba(34,85,221,0.1);
 	}
 	a:focus {
-		outline: 1px solid rgba(51,68,221,0.3);
+		outline: 1px solid rgba(34,85,221,0.3);
 	}
 	a:hover {
-		color: #12b;
-		border-bottom-color: rgba(17,34,187,0.2);
+		color: #52d;
+		border-bottom-color: rgba(85,34,221,0.2);
 	}
 	a:link, a:visited, a:hover {
 		transition: all 0.2s ease;
 	}
 	a:active {
-		color: #b12;
-		border-bottom: 1px solid rgba(187,17,34,0.25);
+		color: #d25;
+		border-bottom: 1px solid rgba(221,34,85,0.25);
 		transition: none;
 	}
 em, i, cite, var {
@@ -257,7 +257,7 @@ code, samp {
 	line-height: 90%;
 	}
 	code {
-		color: #906;
+		color: #b03;
 	}
 	code .comment {
 		color: #999;
