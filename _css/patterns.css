@@ -1,4 +1,39 @@
 /* ============================================================
+	Helpers
+============================================================ */
+/* Visibly hidden */
+.hidden {
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	position: absolute;
+}
+
+/* Centered container with max-width of 800px */
+.container {
+	margin: 0 auto;
+	padding: 1em 4%;
+	max-width: 50em; /* 800px */
+	overflow: hidden;
+}
+@media screen and (min-width: 30em) {
+	.container {
+		padding: 1em 2%;
+	}
+}
+
+/* Bullet-less list */
+.no-bullets li {
+	list-style: none;
+	margin-left: 0;
+}
+
+
+/* ============================================================
 	Highlight/Marks
 ============================================================ */
 .highlight {
@@ -65,7 +100,9 @@ img.pull-right {
 
 /* Module */
 [class*="module"] {
+	border: 0;
 	padding: 2%;
+	display: block;
 	}
 	[class*="module"]:before,
 	[class*="module"]:after {
@@ -81,9 +118,9 @@ img.pull-right {
 [class*="module"] .h {
 	color: inherit;
 	font-weight: 700;
-	font-size: 1.125em; /* 18px */
-	line-height: 1.1111; /* 20px */
-	margin: 0 0 0.4444em; /* 0 0 8px */
+	font-size: 1.25em; /* 20px */
+	line-height: 1.2; /* 24px */
+	margin-top: 0;
 }
 
 /* Module > Notification */
@@ -138,6 +175,43 @@ a[rel="tag"] {
 
 
 /* ============================================================
+	Tooltip
+============================================================ */
+.tip {
+	position: relative;
+	}
+	.tip:hover:after {
+		content: attr(data-tip);
+		color: #fff;
+		font-size: 0.75em; /* 12px */
+		line-height: 1.3334em; /* 16px */
+		text-align: left;
+		background-color: #666;
+		border-radius: 0.3334em; /* 4px */
+		padding: 0.6667em; /* 8px */
+		width: 16.5em; /* 200px */
+		opacity: 0.9;
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 2em; /* 24px */
+		z-index: 98;
+	}
+	.tip:hover:before {
+		content: "";
+		border: solid;
+		border-color: #666 transparent;
+		border-width: 0.5em 0.5em 0 0.5em; /* 6px 6px 0 6px */
+		opacity: 0.9;
+		display: block;
+		left: 1em; /* 12px */
+		bottom: 1em; /* 12px */
+		position: absolute;
+		z-index: 99;
+	}
+
+
+/* ============================================================
 	List
 ============================================================ */
 /* Articles */
@@ -182,7 +256,7 @@ ol.code {
 }
 ol.code li {
 	list-style: decimal-leading-zero;
-	background: #f9f9f9;
+	background: #f6f6f6;
 	margin: 0 0 -1px 0;
 	border-top: 1px solid #fff;
 	padding: 0 0.5em; /* 0 8px */
@@ -202,10 +276,7 @@ dl.metadata {
 dl.metadata dt {
 	font-weight: 400;
 	padding-top: 0.5em;
-	}
-	dl.metadata dt:after {
-		content: ":";
-	}
+}
 dl.metadata dd {
 	color: #888;
 	margin-left: 0;
@@ -232,9 +303,9 @@ dl.metadata dd {
 .progress li {
 	list-style: none;
 	line-height: 2; /* 32px */
-	background-color: #f9f9f9;
-	margin: 0 1em 0.5em 0; /* 0 16px 8px 0 */
-	padding: 0 0.25em 0 0.5em; /* 0 4px 0 8px */
+	background-color: #f6f6f6;
+	margin: 0 1.25em 0.5em 0; /* 0 20px 8px 0 */
+	padding: 0.25em 0.25em 0.25em 0.5em; /* 4px 4px 4px 8px */
 	position: relative;
 	display: inline-block;
 	}
@@ -243,14 +314,15 @@ dl.metadata dd {
 		font-size: 1em; /* 16px */
 		font-weight: 700;
 		border: solid;
-		border-color: #f9f9f9 transparent;
-		border-width: 1em 0 1em 1em; /* 16px 0 16px 16px */
+		border-color: #f6f6f6 transparent;
+		border-width: 1.25em 0 1.25em 1.25em; /* 20px 0 20px 20px */
 		display: block;
 		position: absolute;
-		left: -1em; /* -16px */
+		top: 0;
+		left: -1.25em; /* -20px */
 	}
 	.progress li:first-child {
-		border-radius: 0.25em 0 0 0.25em;
+		padding-left: 0.75em;
 	}
 	.progress li:first-child:before {
 		display: none;
@@ -259,11 +331,11 @@ dl.metadata dd {
 		content: "";
 		font-size: 1em; /* 16px */
 		border: solid;
-		border-color: transparent #f9f9f9;
-		border-width: 1em 0 1em 1em; /* 16px 0 16px 16px */
+		border-color: transparent #f6f6f6;
+		border-width: 1.25em 0 1.25em 1.25em; /* 20px 0 20px 20px */
 		display: block;
 		position: absolute;
-		right: -1em; /* -16px */
+		right: -1.25em; /* -20px */
 		top: 0;
 	}
 .progress li.completed {
@@ -356,19 +428,18 @@ dl.metadata dd {
 [class$="nav"] a {
 	border: 0;
 	border-right: 1px solid #e9e9e9;
-	padding: 0.5em 1em; /* 8px 16px */
+	padding: 0.5em 0.75em; /* 8px 12px */
 	display: inline-block;
 }
 [class$="nav"] li:last-child a {
 	border-right: 0;
 	}
 	[class$="nav"] li a:hover {
-		background-color: #f9f9f9;
+		background-color: #f6f6f6;
 	}
 	[class$="nav"] li a.is-active {
 		color: #444;
 		font-weight: 700;
-		background-color: #e9e9e9;
 	}
 
 /* Vertical */
@@ -382,7 +453,7 @@ dl.metadata dd {
 	display: block;
 	}
 	.vertical-nav a.is-active {
-		border-radius: 0.25em 0 0 0.25em;
+		background-color: #e9e9e9;
 		position: relative;
 	}
 	.vertical-nav a.is-active:after {
@@ -404,28 +475,29 @@ dl.metadata dd {
 	padding: 0;
 	margin-left: 1em;
 }
-.tabbed-nav a {
+.tabbed-nav a.is-active {
+	background-color: #fff;
+	margin-bottom: -1px;
+	border: 1px solid #e9e9e9;
+	border-bottom-color: #fff;
 	border-radius: 0.25em 0.25em 0 0; /* 4px 4px 0 0 */
-	}
-	.tabbed-nav a.is-active {
-		background-color: #fff;
-		margin-bottom: -1px;
-		border: 1px solid #e9e9e9;
-		border-bottom-color: #fff;
-	}
+}
 
 /* Pagination */
-.page-nav a.is-active {
-	border-radius: 0.25em; /* 4px */
-}
-.page-nav a[rel="prev"],
-.page-nav a[rel="next"] {
-	border: 0;
+.page-nav a {
+	padding: 0.5em 1em; /* 8px 16px */
 	}
-	.page-nav a[rel="prev"]:hover,
-	.page-nav a[rel="next"]:hover {
-		background-color: transparent;
+	.page-nav a.is-active {
+		background-color: #e9e9e9;
 	}
+	.page-nav a[rel="prev"],
+	.page-nav a[rel="next"] {
+		border: 0;
+		}
+		.page-nav a[rel="prev"]:hover,
+		.page-nav a[rel="next"]:hover {
+			background-color: transparent;
+		}
 
 /* Breadcrumb */
 .breadcrumb-nav {
@@ -446,48 +518,11 @@ dl.metadata dd {
 
 
 /* ============================================================
-	Tooltip
-============================================================ */
-.tip {
-	position: relative;
-	}
-	.tip:hover:after {
-		content: attr(data-tip);
-		color: #fff;
-		font-size: 0.75em; /* 12px */
-		line-height: 1.3334em; /* 16px */
-		text-align: left;
-		background-color: #666;
-		border-radius: 0.3334em; /* 4px */
-		padding: 0.6667em; /* 8px */
-		width: 16.5em; /* 200px */
-		opacity: 0.9;
-		display: block;
-		position: absolute;
-		left: 0;
-		bottom: 2em; /* 24px */
-		z-index: 98;
-	}
-	.tip:hover:before {
-		content: "";
-		border: solid;
-		border-color: #666 transparent;
-		border-width: 0.5em 0.5em 0 0.5em; /* 6px 6px 0 6px */
-		opacity: 0.9;
-		display: block;
-		left: 1em; /* 12px */
-		bottom: 1em; /* 12px */
-		position: absolute;
-		z-index: 99;
-	}
-
-
-/* ============================================================
 	Form
 ============================================================ */
 /* Text input */
 .input {
-	background-color: #f9f9f9;
+	background-color: #f6f6f6;
 	box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
 	border: 1px solid #ddd;
 	border-color: rgba(0,0,0,0.2);
@@ -507,11 +542,15 @@ select.input,
 [class$="button"] {
 	color: #444;
 	text-shadow: 0 1px 0 #fff;
-	box-shadow: inset 1px 1px 0 #fff;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
 	background-color: #e9e9e9;
+	background: -webkit-linear-gradient(top,#fff 0%,#e9e9e9 100%);
+	background: -moz-linear-gradient(top,#fff 0%,#e9e9e9 100%);
+	background: -o-linear-gradient(top,#fff 0%,#e9e9e9 100%);
+	background: linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
 	margin-right: 0.5em;
 	border: 1px solid #ddd;
-	border-color: rgba(0,0,0,0.2);
+	border-color: rgba(0,0,0,0.15);
 	border-radius: 0.25em;
 	padding: 0.5em 0.75em; /* 8px 12px */
 	display: inline-block;
@@ -527,38 +566,38 @@ select.input,
 	[class$="button"]:hover,
 	[class$="button"]:focus {
 		color: #333;
-		box-shadow: inset 1px 1px 0 #fff;
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
 		background-color: #e9e9e9;
 		border: 1px solid #888;
-		border-color: rgba(0,0,0,0.3);
+		border-color: rgba(0,0,0,0.2);
 	}
 	select.input:active,
 	[class$="button"]:active {
-		box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05), inset 0 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0 2px 0 rgba(0,0,0,0.05);
 		background-color: #ddd;
 	}
 
 /* Button > Primary */
 .primary-button {
-	color: #fff;
+	color: #f6f6f6;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-	box-shadow: inset 1px 1px 0 rgba(255,255,255,0.2);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.3);
 	background-color: #34d;
 	background: -webkit-linear-gradient(top,#56f 0%,#34d 100%);
 	background: -moz-linear-gradient(top,#56f 0%,#34d 100%);
 	background: -o-linear-gradient(top,#56f 0%,#34d 100%);
 	background: linear-gradient(to bottom,#56f 0%,#34d 100%);
 	border: 1px solid #34d;
-	border-color: rgba(0,0,0,0.05);
+	border-color: rgba(0,0,0,0.4);
 	}
 	.primary-button:hover,
 	.primary-button:focus {
 		color: #fff;
-		box-shadow: inset 1px 1px 0 rgba(255,255,255,0.2);
-		border-color: rgba(0,0,0,0.7);
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,0.33);
+		border-color: rgba(0,0,0,0.6);
 	}
 	.primary-button:active {
-		box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05), inset 0 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0 2px 0 rgba(0,0,0,0.25);
 		background-color: #12b;
 		background: -webkit-linear-gradient(top,#34d 0%,#12b 100%);
 		background: -moz-linear-gradient(top,#34d 0%,#12b 100%);
