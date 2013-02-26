@@ -379,7 +379,6 @@ input[type="button"],
 input[type="submit"] {
 	-webkit-appearance: button;
 	line-height: normal;
-	border-radius: 0;
 	width: auto;
 	cursor: pointer;
 	}
