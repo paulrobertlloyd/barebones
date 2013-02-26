@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import url('reset.css');
+@import url('patterns.css');
+
+/* ============================================================
+	Site specific styles
+============================================================ */
+body {
+	background-color: #f6f6f6;
+} 
+main[role="main"] {
+	background-color: #fff;
+	padding: 0 0 2em 0;
+}
+footer[role="contentinfo"] {
+	box-shadow: inset 0 2px #f0f0f0;
+	margin-top: 0;
+}
