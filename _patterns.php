@@ -35,13 +35,6 @@
 			padding:1.5%;
 			overflow:hidden;
 		}
-		details.primer textarea {
-			font:0.75em/1.5 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace; /* 16px/24px */
-		}
-		details.primer textarea {
-			padding:1%;
-			width:98%;
-		}
 		details.primer p.caption {
 			margin-left:0;
 			margin-bottom:0;
@@ -86,7 +79,7 @@
 		echo '<details class="primer">';
 		echo '<summary title="Show markup and usage">&#8226;&#8226;&#8226;</summary>';
 		echo '<section>';
-		echo '<textarea rows="10" cols="30" class="input">'.htmlspecialchars(file_get_contents($patterns_dir.'/'.$file)).'</textarea>';
+		echo '<textarea rows="10" cols="30" class="input code">'.htmlspecialchars(file_get_contents($patterns_dir.'/'.$file)).'</textarea>';
 		echo '<p class="caption"><strong>Usage:</strong> '.htmlspecialchars(@file_get_contents($patterns_dir.'/'.str_replace('.html','.txt',$file))).'</p>';
 		echo '</section>';
 		echo '</details><!--/.primer-->';
@@ -99,7 +92,7 @@
 
 	<footer role="contentinfo">
 		<div class="container">
-			<p><small>Copyright &#169; 2013 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
+			<p><small>Copyright &#169; 2013 <a href="http://paulrobertlloyd.com">Paul Robert Lloyd</a>. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
 		</div><!--/container-->
 	</footer><!--/@contentinfo-->
 </body>

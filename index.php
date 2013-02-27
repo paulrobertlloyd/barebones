@@ -34,7 +34,7 @@
 
 	<footer role="contentinfo">
 		<div class="container">
-			<p><small>Copyright &#169; 2013 Paul Robert Lloyd. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
+			<p><small>Copyright &#169; 2013 <a href="http://paulrobertlloyd.com">Paul Robert Lloyd</a>. Code covered by the <a rel="license" href="http://paulrobertlloyd.mit-license.org/">MIT license</a>.</small></p>
 		</div><!--/container-->
 	</footer><!--/@contentinfo-->
 </body>
