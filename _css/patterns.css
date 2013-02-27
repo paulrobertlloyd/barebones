@@ -51,7 +51,7 @@
 	color: #333;
 	font-weight: 700;
 	font-size: 4em; /* 64px */
-	line-height: 0.875; /* 56px */
+	line-height: 1; /* 64px */
 	margin: 0.25em 0 0; /* 16px 0 0 */
 }
 .lede {
