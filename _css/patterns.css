@@ -586,12 +586,12 @@ select.input,
 [class$="button"] {
 	color: #444;
 	text-shadow: 0 1px 0 #fff;
-	box-shadow: inset 0 -1px 0 #ccc;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
 	background-color: #e9e9e9;
 	background: -webkit-linear-gradient(top, #fff, #e9e9e9);
 	background: -moz-linear-gradient(top, #fff, #e9e9e9);
-	background: -o-linear-gradient(top, #fff,#e9e9e9);
-	background: linear-gradient(to bottom, #fff,#e9e9e9);
+	background: -o-linear-gradient(top, #fff, #e9e9e9);
+	background: linear-gradient(to bottom, #fff, #e9e9e9);
 	margin-right: 0.5em;
 	border: 1px solid #ccc;
 	border-radius: 0.25em;
@@ -615,13 +615,17 @@ select.input,
 		border: 1px solid #bbb;
 	}
 	select.input:active,
-	[class$="button"]:active {
+	[class$="button"]:active,
+	[class$="button"].selected {
 		color: #333;
 		outline: 0 none;
 		box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
 		background-color: #bbb;
+		background: -webkit-linear-gradient(top, #e9e9e9, #fff);
+		background: -moz-linear-gradient(top, #e9e9e9, #fff);
+		background: -o-linear-gradient(top, #e9e9e9, #fff);
+		background: linear-gradient(to bottom, #e9e9e9, #fff);
 		border-color: #bbb;
-		top:1px;
 	}
 
 /* Button > Primary */
