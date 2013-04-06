@@ -409,24 +409,24 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 
-/* Placeolder */
+/* Placheolder */
 ::-webkit-input-placeholder {
-   color: #999;
+	color: #999;
 	}
 	:focus::-webkit-input-placeholder {
 		color: #ccc;
 	}
 :-moz-placeholder {
-   color: #999;  
+	color: #999;
 	}
 	:focus:-moz-placeholder {
 		color: #ccc;
 	}
 :-ms-input-placeholder {
-   color: #999;  
+	color: #999;
 	}
 	:focus:-ms-input-placeholder {
-	   color: #ccc;  
+	   color: #ccc;
 	}
 
 
