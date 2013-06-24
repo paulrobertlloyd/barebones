@@ -1,1 +1,0 @@
-Use this folder for included (PHP) files.
