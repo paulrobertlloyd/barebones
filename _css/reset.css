@@ -196,7 +196,7 @@ figcaption {
 	padding: 0.6667em 0; /* 8px 0 */
 	clear: left;
 }
-blockquote + figcaption: before {
+blockquote + figcaption::before {
 	content: "\2014";
 }
 
@@ -234,7 +234,7 @@ strong, b {
 	font-weight: 700;
 	line-height: 90%;
 }
-: lang(en-gb)>q {
+:lang(en-gb)>q {
 	quotes: "\201C" "\201D" "\2018" "\2019";
 	}
 	q::before { content: open-quote; }
