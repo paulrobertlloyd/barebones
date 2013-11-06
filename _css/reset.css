@@ -409,7 +409,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 
-/* Placheolder */
+/* Placeholder */
 ::-webkit-input-placeholder {
 	color: #999;
 	}

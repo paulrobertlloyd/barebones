@@ -136,7 +136,7 @@ p q r s t u v w x y z { | } ~</samp></pre>
 			<p>Figures are usually used to refer to images:</p>
 			<div class="example">
 				<figure>
-					<img src="http://lorempixum.com/680/400/abstract" alt="Example image"/>
+					<img src="http://lorempixel.com/680/400/abstract" alt="Example image"/>
 					<figcaption>
 						This is a placeholder image, with supporting caption.
 					</figcaption>
